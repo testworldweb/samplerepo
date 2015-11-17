@@ -5,7 +5,8 @@ import java.util.LinkedList;
 
 /**
  * In this class we have not used interfaces at all
- * 
+ * Exactly similar to arraylist except that ArrayList is implemented using re sizable array while LinkedList is implemented using doubly LinkedList
+ * similar opeartions. Both are ordered
  *
  */
 

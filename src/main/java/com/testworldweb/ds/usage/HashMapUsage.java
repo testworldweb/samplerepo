@@ -8,7 +8,8 @@ import java.util.Iterator;
  * 2.put replaces the existing value if it already exists 
  * 3.Integer can also be added with primitive type
  * 4. The for-each loop is much compact to use for collections 
- * 5 hm.keyset() returns the set of all keys 
+ * 5 IMP : hm.keyset() returns the set of all keys , and iterator and for loop are essentially applied on this  
+ * Store iterator.next in a temp variable if it nneeds to be called twice 
  *  
  */
 public class HashMapUsage {
@@ -46,7 +47,7 @@ public class HashMapUsage {
 	}
 	/*
 	 * Note that in this case it is important to same the iterator into a temp buffer
-	 * if you make iterator.next() call twice then you most to the next entry
+	 * if you make iterator.next() call twice then you go to the next entry
 	 */
 	public static void printHashMap3(HashMap<String,Integer> hm)
 	{
