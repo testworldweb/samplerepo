@@ -21,13 +21,18 @@ public class FileUtilitiesByteStream {
 	  {
 		 
 			
-			 FileInputStream fis=null;
-				 fis =new FileInputStream(filePath);
-				 int b;
+			 FileInputStream fis=new FileInputStream(filePath);
+				 /*int b;
 				 while((b=fis.read())!=-1)
 				 {
 					 System.out.print((char)b);
-				 }
+				 }*/
+			   int b =fis.read();
+			   while(b!=-1)
+			   {
+				   System.out.print((char)b);
+				   b=fis.read();
+			   }
 				fis.close();
 			
 			
