@@ -9,12 +9,28 @@ import java.util.Iterator;
  * 3.Integer can also be added with primitive type
  * 4. The for-each loop is much compact to use for collections 
  * 5 IMP : hm.keyset() returns the set of all keys , and iterator and for loop are essentially applied on this  
- * Store iterator.next in a temp variable if it nneeds to be called twice 
- *  
+ * 6.Store iterator.next in a temp variable if it needs to be called twice 
+ * 7.functions 
+ * a.put/remove returns the previous value associated with the key .or null
+ * b.get returns the value or null  
  */
 public class HashMapUsage {
 
 	public static void main(String[] args) {
+		
+		HashMap<String,Integer> hm2=new HashMap<String,Integer>();
+		System.out.println(hm2.put("a",1));
+		System.out.println(hm2.put("a",2));
+		System.out.println(hm2.get("a"));
+		System.out.println(hm2.remove("a"));
+		
+		
+		
+		
+		
+		
+		
+		
 		HashMap<String,Integer> hm=new HashMap<String,Integer>();
 		String givenString="dsddjhsbmdis";
 		
