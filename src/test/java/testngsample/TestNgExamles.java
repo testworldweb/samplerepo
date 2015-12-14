@@ -21,9 +21,11 @@ public class TestNgExamles {
 
 		Assert.assertTrue(false);
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Test(enabled=false)
+	public void passSkip()
+	{
 
+		Assert.assertTrue(false);
 	}
-
+	
 }
