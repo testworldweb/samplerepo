@@ -1,6 +1,6 @@
 package com.testworldweb.java.sorting;
 
-public class MergeSortFb16 {
+public class MergeArrFb16 {
 	
 
 	
