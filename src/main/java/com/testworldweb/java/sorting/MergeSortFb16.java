@@ -1,19 +1,21 @@
 package com.testworldweb.java.sorting;
 
+import java.util.Arrays;
+
 public class MergeSortFb16 {
 	
 public static void mergeWithinArray(int[] userArray ,int start ,int mid ,int end){
 		
 		
-		int i=0,k=0;
+		int i=start,
+				k=start;
 		int j=mid+1;
-		int temp=0;
 		
 		
 			int [] result=new int[userArray.length];
 			
 			
-				while(i<=mid && j<userArray.length){
+				while(i<=mid && j<=end){
 		
 					if(userArray[i]<userArray[j]){
 						
@@ -31,19 +33,21 @@ public static void mergeWithinArray(int[] userArray ,int start ,int mid ,int end
 					
 					
 			}
-			
-			while(j<userArray.length){
+				while(i<=mid){
+					result[k]=userArray[i];
+					i++;
+					k++;
+				}
+			while(j<=end){
 				result[k]=userArray[j];
 				j++;
 				k++;
 			}		
 			
-			System.out.println("");
-			System.out.print("The merged array is : ");
-			
-			for(int x=0;x<result.length;x++){
 				
-				System.out.print(" "+result[x]+ " ");
+			for(int x=start;x<=end;x++){
+				
+				userArray[x]=result[x];
 			}
 			
 
@@ -75,9 +79,12 @@ public static void mergeWithinArray(int[] userArray ,int start ,int mid ,int end
 	
 			public static void main(String[] args){
 				
-				int[] numbers1={1,50,200,3,5,7,9,2,14,16,18,100};
+				int[] numbers1={3,1,1,1,1,1,1,1,100,9,6,2};
+				//int[] numbers1={1,50,200,3};
 				
+				System.out.println(Arrays.toString(numbers1));
 				mergeSortArray(numbers1);
+				System.out.println(Arrays.toString(numbers1));
 					
 			}
 
