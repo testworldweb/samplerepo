@@ -80,7 +80,7 @@ public static void mergeWithinArray(int[] userArray ,int start ,int mid ,int end
 			public static void main(String[] args){
 				
 				int[] numbers1={3,1,1,1,1,1,1,1,100,9,6,2};
-				
+				//array
 				
 				System.out.println(Arrays.toString(numbers1));
 				mergeSortArray(numbers1);
